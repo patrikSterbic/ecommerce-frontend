@@ -1,0 +1,152 @@
+@import "./variables.less";
+
+.display-none {
+  display: none;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+input,
+button,
+textarea,
+:focus {
+  outline: none; // You should add some other style for :focus to help UX/a11y
+}
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus,
+button,
+button:hover,
+button:active,
+button:visited,
+button:focus {
+  outline: none !important;
+}
+a img {
+  outline: none;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  cursor: pointer;
+
+  span {
+    cursor: pointer;
+  }
+}
+/**
+ * Position utils
+ */
+.position-relative {
+  position: relative;
+}
+
+.height-100pr {
+  height: 100%;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.absolute-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+/**
+ * Flex utils
+ */
+.flex-auto {
+  display: flex;
+  flex: auto;
+  height: 100%;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/**
+ * Text utils
+ */
+.font-bold {
+  font-weight: bold;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.color-avip-dark-green {
+  color: @test-color;
+}
+
+.color-avip-light-green {
+  color: @test-color;
+}
+
+.line-break-before:before {
+  content: " ";
+  display: block;
+}
+
+/**
+ * Other utils
+ */
+.full-width {
+  width: 100%;
+}
+
+.label-padding {
+  padding-top: 23px;
+}
+
+.container {
+  margin: 10px auto;
+  text-align: center;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}

@@ -1,0 +1,1 @@
+export const SET_ROUTING_PARAMS = 'app/SET_ROUTING_PARAMS';
